@@ -1,16 +1,38 @@
 import React, { useState, useEffect } from 'react';
+import './flashcards.css';
+
+const FlashCard = ({ front, back }) => {
+  const [flipped, setFlipped] = useState(false);
+
+  const handleFlip = () => {
+    setFlipped(!flipped);
+  };
+
+  return (
+    <div className={`flashcard ${flipped ? 'flipped' : ''}`} onClick={handleFlip}>
+      <div className="front">{front}</div>
+      <div className="back">{back}</div>
+    </div>
+  );
+};
+
 
 const FlashCards = () => {
   const [frontText, setFrontText] = useState('');
   const [backText, setBackText] = useState('');
-  const [status, setStatus] = useState(''); // Initialize status state with an empty string
+  const [status, setStatus] = useState('');
 
   const [flashCards, setFlashCards] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:3000/cards')
-      .then((response) => response.json())
-      .then((data) => setFlashCards(data.cards))
+    fetch('http://localhost:3001/cards')
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Failed to fetch data');
+        }
+        return response.json();
+      })
+      .then((data) => setFlashCards(data))
       .catch((error) => console.error('Error fetching cards:', error));
   }, []);
 
@@ -20,6 +42,7 @@ const FlashCards = () => {
       back: backText,
       status: status,
     };
+
     // Logic to send the new card data to the server (POST request)
 
     // Clear input fields after creating the card
@@ -56,16 +79,14 @@ const FlashCards = () => {
         </select>
       </div>
       <button onClick={handleCreateCard}>Create Card</button>
+
       {/* Displaying existing flash cards */}
       <h3>Existing Flash Cards:</h3>
-      <ul>
+      <div className="flashcards-container">
         {flashCards.map((card) => (
-          <li key={card.id}>
-            <span>{card.front}</span>
-            <span>{card.back}</span>
-          </li>
+          <FlashCard key={card.id} front={card.front} back={card.back} />
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
