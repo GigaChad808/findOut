@@ -1,30 +1,31 @@
 import React from 'react';
+import './index.css'; // Import the CSS file
 
 const Home = () => {
   return (
     <div>
-      <h1>Welcome to Flashcards App</h1>
+      <h1>
+        Welcome to Flash Cards App
+      </h1>
       <p>
-        Hi, I am Sanan Namazov. I am a 3rd-year Computer Science student at ADA University. This is a flash card app where you can create, view, edit, and delete flash cards.
+        Hi, I am Sanan Namazov. I am a 3rd-year Computer Science student at ADA University. This is a flash card app
+        where you can create, view, edit, and delete flash cards.
       </p>
       <h2>Projects:</h2>
       <ul>
         <li>
-          <strong>Personal Website: </strong> 
+          <strong>Personal Website: </strong>
           <a href="https://gigachad808.github.io/" target="_blank" rel="noopener noreferrer">
             Link to Website
           </a>
-          <p>This website is about personal webpage where it includes a brief info about myself and then links to digital card and github page
-          </p>
+          <p>This website is about a personal webpage where it includes brief info about myself and links to digital card and github page.</p>
         </li>
         <li>
-          <strong>Product App: </strong> 
+          <strong>Product App: </strong>
           <a href="https://gigachad808.github.io/Assignment/" target="_blank" rel="noopener noreferrer">
             Link to Website
           </a>
-          <p>
-            Product app contains list of products and search bar with category selection for enhanced searching.
-          </p>
+          <p>Product app contains a list of products and a search bar with category selection for enhanced searching.</p>
         </li>
       </ul>
     </div>

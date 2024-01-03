@@ -1,7 +1,7 @@
 
 :root {
   --primary: #1c566f;
-  --secondary: #4b2947;
+  --secondary: #8a7d89;
 
 }
 
@@ -54,4 +54,35 @@ header nav a {
 
 header nav a.active {
   background: var(--primary);
+}
+
+
+
+/*for home.js */
+/* Centering the h1 */
+h1 {
+  text-align: center;
+  padding-top: 50px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Styling the projects */
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  flex: 1;
+}
+
+/* Adjusting the width of the anchor tags */
+ul li a {
+  display: block;
+  width: 100%;
 }
