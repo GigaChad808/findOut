@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/GigaChad808/findOut/static/css/main.8160378d.css",
+    "main.js": "/GigaChad808/findOut/static/js/main.6434dcd5.js",
+    "index.html": "/GigaChad808/findOut/index.html",
+    "main.8160378d.css.map": "/GigaChad808/findOut/static/css/main.8160378d.css.map",
+    "main.6434dcd5.js.map": "/GigaChad808/findOut/static/js/main.6434dcd5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8160378d.css",
+    "static/js/main.6434dcd5.js"
+  ]
+}
