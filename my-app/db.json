@@ -1,18 +1,16 @@
 {
   "cards": [
     {
-      "id": 1,
-      "front": "What is 2 + 2",
-      "back": "2 + 2 is 4",
-      "lastModified": "2024-01-03T10:00:00Z",
-      "status": "Want to Learn"
+      "front": "asd",
+      "back": "dsa",
+      "status": "",
+      "id": 9
     },
     {
-      "id": 2,
-      "front": "Who won the Karabakh War?",
-      "back": "Azerbaijan",
-      "lastModified": "2024-01-03T10:00:00Z",
-      "status": "Want to Learn"
+      "front": "Sekerbura or Paxlava",
+      "back": "Of cOURSE PAXLAVA",
+      "status": "",
+      "id": 10
     }
   ]
 }
