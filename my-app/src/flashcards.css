@@ -1,3 +1,14 @@
+h2 {
+  background-color: #0056b3;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .flashcard {
   width: 200px;
   height: 300px;
@@ -47,9 +58,28 @@
   gap: 10px;
 }
 
+.filter-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.filter-container input,
+.filter-container select {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.filter-container label {
+  font-weight: bold;
+}
+
+
 .card-actions {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 
@@ -58,7 +88,20 @@
   margin-top: 270px;
   height: 30px;
   width: 100px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
 }
+
+
+.card-actions button:hover {
+  background-color: #0056b3;
+}
+
+
+
 .flashcard .edit {
   display: flex;
   flex-direction: column;
@@ -80,4 +123,29 @@
 
 .flashcard:hover .card-actions {
   opacity: 1;
+}
+
+
+.input-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-container label {
+  font-weight: bold;
+}
+
+.input-container input,
+.input-container select,
+.input-container button {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+
+.input-container input[type="text"] {
+  width: 200px;
 }
