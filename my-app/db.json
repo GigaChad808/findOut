@@ -1,20 +1,3 @@
 {
-  "cards": [
-    {
-      "front": "Who are you?",
-      "back": "I am the best",
-      "id": 10
-    },
-    {
-      "front": "What are you talking about?",
-      "back": "I do not knowww!!!!",
-      "status": "Noted",
-      "id": 12
-    },
-    {
-      "front": "adsfasdfsdf",
-      "back": "dsfdsf",
-      "id": 13
-    }
-  ]
+  "cards": []
 }

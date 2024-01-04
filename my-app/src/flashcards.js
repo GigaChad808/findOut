@@ -99,7 +99,7 @@ const FlashCards = () => {
     const newCard = {
       front: frontText,
       back: backText,
-      status: status,
+      status: status || "Learned",
     };
   
     
