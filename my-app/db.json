@@ -1,16 +1,15 @@
 {
   "cards": [
     {
-      "front": "asd",
-      "back": "dsa",
-      "status": "",
-      "id": 9
+      "front": "Who are you?",
+      "back": "I am the best",
+      "id": 10
     },
     {
-      "front": "Sekerbura or Paxlava",
-      "back": "Of cOURSE PAXLAVA",
+      "front": "Shut the fuck up",
+      "back": "Okay",
       "status": "",
-      "id": 10
+      "id": 11
     }
   ]
 }

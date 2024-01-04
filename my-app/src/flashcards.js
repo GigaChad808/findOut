@@ -13,6 +13,8 @@ const FlashCard = ({ id, front, back, onDelete }) => {
 
   const handleEdit = () => {
     setIsEditing(true);
+    setEditedFront(front);
+    setEditedBack(back);
   };
 
   const handleSave = () => {
@@ -36,7 +38,6 @@ const FlashCard = ({ id, front, back, onDelete }) => {
   };
 
   const handleDelete = () => {
-    // Logic to delete the card on the server (DELETE request)
     onDelete(id);
   };
 
@@ -44,9 +45,19 @@ const FlashCard = ({ id, front, back, onDelete }) => {
     <div className={`flashcard ${flipped ? 'flipped' : ''}`} onClick={handleFlip}>
       {isEditing ? (
         <div className="edit">
-          <input value={editedFront} onChange={(e) => setEditedFront(e.target.value)} />
-          <input value={editedBack} onChange={(e) => setEditedBack(e.target.value)} />
-          <button onClick={handleSave}>Save</button>
+          <input
+            value={editedFront}
+            onChange={(e) => setEditedFront(e.target.value)}
+            style = {{ color: 'black'}}
+            placeholder="Edit Front Text"
+          />
+          <input
+            value={editedBack}
+            onChange={(e) => setEditedBack(e.target.value) }
+            style = {{ color: 'black'}}
+            placeholder="Edit Back Text"
+          />
+          <button onClick={handleSave} style = {{ color: 'black'}} >Save</button>
         </div>
       ) : (
         <>
@@ -61,7 +72,6 @@ const FlashCard = ({ id, front, back, onDelete }) => {
     </div>
   );
 };
-
 
 const FlashCards = () => {
   const [frontText, setFrontText] = useState('');
@@ -142,6 +152,7 @@ const FlashCards = () => {
           type="text"
           value={frontText}
           onChange={(e) => setFrontText(e.target.value)}
+          style = {{ color: 'black'}} // Set text color to black
         />
       </div>
       <div>
@@ -150,11 +161,16 @@ const FlashCards = () => {
           type="text"
           value={backText}
           onChange={(e) => setBackText(e.target.value)}
+          style = {{ color: 'black'}}
         />
       </div>
       <div>
         <label>Status: </label>
-        <select value={status} onChange={(e) => setStatus(e.target.value)}>
+        <select 
+          value={status} 
+          onChange={(e) => setStatus(e.target.value)}
+          style = {{ color: 'black'}}
+        >
           <option value="Learned">Learned</option>
           <option value="Want to Learn">Want to Learn</option>
           <option value="Noted">Noted</option>

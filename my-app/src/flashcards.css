@@ -3,6 +3,7 @@
   height: 300px;
   position: relative;
   perspective: 1000px;
+  cursor: pointer;
 }
 
 .flashcard > div {
@@ -57,4 +58,26 @@
   margin-top: 270px;
   height: 30px;
   width: 100px;
+}
+.flashcard .edit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flashcard .edit input,
+.flashcard .edit button {
+  margin: 5px;
+  z-index: 1;
+  
+}
+
+
+.flashcard .card-actions {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.flashcard:hover .card-actions {
+  opacity: 1;
 }
