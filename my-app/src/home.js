@@ -8,8 +8,7 @@ const Home = () => {
         Welcome to Flash Cards App
       </h1>
       <p>
-        Hi, I am Sanan Namazov. I am a 3rd-year Computer Science student at ADA University. This is a flash card app
-        where you can create, view, edit, and delete flash cards.
+        Flashcard application is designed to help you learn and revise with ease. Whether you're studying for exams, learning a new language, or simply looking to memorize important information, our app has got you covered. The app aims to streamline your learning process, making it efficient and enjoyable. Start creating your personalized flashcards today and embark on a journey of effective learning and knowledge retention!
       </p>
       <h2>Projects:</h2>
       <ul>

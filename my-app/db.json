@@ -1,3 +1,22 @@
 {
-  "cards": []
+  "cards": [
+    {
+      "front": "Everything Goes So hard",
+      "back": "Why?",
+      "status": "Learned",
+      "id": 1
+    },
+    {
+      "front": "Are you okay?",
+      "back": "No",
+      "status": "Want to Learn",
+      "id": 2
+    },
+    {
+      "front": "Deadline should be extended",
+      "back": "NO",
+      "status": "Noted",
+      "id": 3
+    }
+  ]
 }
